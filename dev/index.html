@@ -1,0 +1,44 @@
+<html>
+  <body>
+    <h1>Dev page</h1>
+
+    <div style="height: 150vh">
+      <a href="https://example.com">example.com</a>
+
+      <a href="/sub.html">sub page</a>
+
+      <a
+        href="/contact"
+        onclick="history.pushState({}, '', '/contact');return false"
+        >push: /contact</a
+      >
+      <a
+        href="/about"
+        onclick="history.pushState({}, '', '/about');return false"
+        >push: /about</a
+      >
+
+      <a href="#anchor">anchor</a>
+
+      <button type="button" id="some-button">Button</button>
+
+      <form id="contact-form" name="My form" onsubmit="return false">
+        <input type="text" name="name" />
+
+        <button type="submit">Submit form</button>
+      </form>
+
+      <pre><code id="logs"></code></pre>
+    </div>
+
+    <div id="anchor">Lorem ipsum dolor sit</div>
+
+    <script
+      src="dist/script.min.js"
+      data-submit-url="http://127.0.0.1:3003/api/submit"
+      data-debug="true"
+      data-mode="beacon"
+      data-site-id="EU01TEST01"
+    ></script>
+  </body>
+</html>
