@@ -125,6 +125,12 @@ export interface IOptions {
 }
 ```
 
+## DIY server
+
+You can also send data to your own server. With a bit of procesing, the data can be stored in any database, timeseries or even redis.
+
+Check out the [Lambda+CloudWatch example](https://github.com/privian/web-analytics-example-cloudwatch).
+
 ## License
 
 MIT
